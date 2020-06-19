@@ -1,7 +1,7 @@
 @font-face {
     font-family: "balqis";
     src: url("../fonts/balqis.woff2") format("woff2"),
-         url("../fonts/balqis.woff") format("woff");
+    url("../fonts/balqis.woff") format("woff");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
     font-family: "roboto";
     src: url("../fonts/RobotoCondensed-Light.woff2") format("woff2"),
-         url("../fonts/RobotoCondensed-Light.woff") format("woff");
+    url("../fonts/RobotoCondensed-Light.woff") format("woff");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
     font-family: "roboto";
     src: url("../fonts/RobotoCondensed-LightItalic.woff2") format("woff2"),
-         url("../fonts/RobotoCondensed-LightItalic.woff") format("woff");
+    url("../fonts/RobotoCondensed-LightItalic.woff") format("woff");
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -28,7 +28,7 @@
 @font-face {
     font-family: "roboto";
     src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
-         url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+    url("../fonts/RobotoCondensed-Regular.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -52,10 +52,40 @@ a {
     text-decoration: none;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.page-section {
+    margin: 200px auto;
+    max-width: 1920px;
+}
+
 .container {
     max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.title {
+    font-size: 96px;
+    line-height: 128px;
+    font-family: "balqis";
+    font-weight: 300;
+    color: #e2ab3f;
+    margin-bottom: 100px;
+}
+
+.title span {
+    font-size: 24px;
+    line-height: 28px
+    color: #000;
+    font-family: 'roboto';
+    margin-top: -30px;
+    margin-left: 185px;
+    display: block;
 }
 
 .header {
@@ -109,11 +139,7 @@ a {
     margin-top: -66px;
 }
 
-.menu__list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
+
 
 .menu__list-item {
     display: inline-block;
@@ -125,4 +151,110 @@ a {
 
 .menu__list-link:hover {
     text-decoration: underline;
+}
+
+.fairy-tail__slider {
+    width: 50%;
+}
+
+.fairy-tail__container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.fairy-tail__inner {
+    position: relative;
+}
+
+.fairy-tail__body {
+    width: 50%;
+    margin-left: auto;
+    padding-left: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.fairy-tail__body-title {
+    font-weight: 400;
+}
+
+.fairy-tail__text {
+    padding: 10px 0;
+}
+
+.slick-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    z-index: 5;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.our-trip__slider {
+    width: 50%;
+    margin-left: auto;
+}
+
+.our-trip__inner {
+    position: relative;
+}
+
+.our-trip__container {
+    max-width: 1230px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+.our-trip__title span {
+    margin-left: 240px;
+}
+
+.our-trip__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 50%;
+    padding-right: 55px;
+}
+
+.our-trip__list {
+    margin: 5px 0;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.our-trip__list li:first-child {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.our-trip__btn {
+    align-self: start;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 11px 53px;
+    text-align: center;
+    border: 1px solid #E2AB3F;
 }
