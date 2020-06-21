@@ -80,7 +80,7 @@ ul {
 
 .title span {
     font-size: 24px;
-    line-height: 28px
+    line-height: 28px;
     color: #000;
     font-family: 'roboto';
     margin-top: -30px;
@@ -257,4 +257,140 @@ ul {
     padding: 11px 53px;
     text-align: center;
     border: 1px solid #E2AB3F;
+}
+
+.hotel__title span {
+    margin-left: 120px;
+}
+
+.hotel__inner {
+    display: flex;
+}
+
+.hotel__images {
+    margin-right: 100px;
+}
+
+.hotel__text {
+    margin-bottom: 20px;
+}
+
+.hotel__gallery {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hotel__gallery a {
+    margin-top: 50px;
+}
+
+.price {
+    background: url("../images/price-1.png") no-repeat 100% 50%;
+}
+
+.price__inner {
+    display: flex;
+}
+
+.price__on {
+    margin-right: 70px;
+    width: 530px;
+}
+
+.price__on-title,
+.price__off-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+.price__list-item {
+    margin-bottom: 20px;
+}
+
+.contacts__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+
+.contacts__date,
+.contacts__price {
+    font-family: "balqis";
+    font-size: 96px;
+    line-height: 100px;
+    color: #E2AB3F;
+    font-weight: 300;
+}
+
+.contacts__date span,
+.contacts__price span {
+    display: block;
+    line-height: 28px;
+    font-size: 24px;
+    color: #000;
+    font-family: "roboto";
+    margin-top: -10px;
+    margin-left: 205px;
+}
+
+.contacts__date {
+    margin-bottom: 20px;
+}
+
+.contacts__price {
+    margin-left: 120px;
+}
+
+
+.contacts__form {
+    max-width: 383px;
+    margin: 0 auto;
+
+}
+
+.contacts__form-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+
+.contacts__form-input {
+    display: block;
+    margin-bottom: 20px;
+    height: 50px;
+    border: 1px solid #E2AB3F;
+    padding: 0 30px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.contacts__form-input::placeholder {
+    color: #000;
+}
+
+.contacts__form-btn {
+    font-family: "roboto";
+    background-color: transparent;
+    margin-bottom: 20px;
+    height: 50px;
+    border: 1px solid #E2AB3F;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 300;
+    padding: 11px 45px;
+    cursor: pointer;
 }
