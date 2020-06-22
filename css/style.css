@@ -34,13 +34,19 @@
     font-display: swap;
 }
 
-
-
-*,  *::after, *::before {
+html {
     box-sizing: border-box;
 }
 
-html, body {
+*,  *::after, *::before {
+    box-sizing: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+body {
     font: 300 18px/21px "roboto", "Arial", sans-serif;
     color: #000;
     margin: 0;
