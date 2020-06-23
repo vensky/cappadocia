@@ -8,6 +8,13 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify-es').default;
 const imagemin = require('gulp-imagemin');
 
+const paths = {
+    build: './build',
+
+    scss: './src/scss',
+    css: './src/css'
+}
+
 function browsersync() {
     browserSync.init({ // Инициализация Browsersync
         server: { baseDir: 'dev/' }, // Указываем папку сервера
@@ -17,20 +24,20 @@ function browsersync() {
 }
 
 function styles() {
-    return src('dev/scss/style.scss')
+    return src(`${paths.scss}/style.scss`)
     .pipe(sass())
     .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
-    .pipe(cleancss(
-        {
-            level:
-                {
-                    1: {
-                        specialComments: 0
-                    }
-                }
-            }
-    ))
-    .pipe(dest('dest/css/'))
+    // .pipe(cleancss(
+    //     {
+    //         level:
+    //             {
+    //                 1: {
+    //                     specialComments: 0
+    //                 }
+    //             }
+    //         }
+    // ))
+    .pipe(dest(`${paths.css}`))
     .pipe(browserSync.stream())
 }
 
@@ -60,7 +67,7 @@ function build() {
 function startWhatch() {
     watch('dev/**/*.html').on('change', browserSync.reload)
     watch('dev/scss/**/*scss', styles);
-    watch(['dev/js/**/*.js', '!script.min.js'], scripts);
+    // watch(['dev/js/**/*.js', '!script.min.js'], scripts);
 }
 
 exports.browsersync = browsersync;
@@ -68,4 +75,4 @@ exports.scripts = scripts;
 exports.styles = styles;
 exports.images = images;
 
-exports.default = parallel(styles, scripts, browsersync, startWhatch);
+exports.default = parallel(styles, browsersync, startWhatch);
