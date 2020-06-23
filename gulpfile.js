@@ -10,6 +10,7 @@ const imagemin = require('gulp-imagemin');
 
 const paths = {
     build: './build',
+    src: './src',
 
     scss: './src/scss',
     css: './src/css'
@@ -17,7 +18,7 @@ const paths = {
 
 function browsersync() {
     browserSync.init({ // Инициализация Browsersync
-        server: { baseDir: 'dev/' }, // Указываем папку сервера
+        server: { baseDir: `${paths.src}` }, // Указываем папку сервера
         notify: false, // Отключаем уведомления
         online: true // Режим работы: true или false (false - если нет интернета)
     })
@@ -65,8 +66,8 @@ function build() {
 }
 
 function startWhatch() {
-    watch('dev/**/*.html').on('change', browserSync.reload)
-    watch('dev/scss/**/*scss', styles);
+    watch(`${paths.src}/**/*.html`).on('change', browserSync.reload)
+    watch(`${paths.src}/scss/**/*scss`, styles);
     // watch(['dev/js/**/*.js', '!script.min.js'], scripts);
 }
 

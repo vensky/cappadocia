@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Balqis";
+    src: url("../fonts/balqis.woff2") format("woff2"),
+    url("../fonts/balqis.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "RobotoCondensed";
+    src: url("../fonts/robotoCondensed-Light.woff2") format("woff2"),
+    url("../fonts/robotoCondensedLight.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "RobotoCondensed";
+    src: url("../fonts/robotoCondensed-LightItalic.woff2") format("woff2"),
+    url("../fonts/robotoCondensedLightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "RobotoCondensed";
+    src: url("../fonts/robotoCondensed-Regular.woff2") format("woff2"),
+    url("../fonts/robotoCondensed-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

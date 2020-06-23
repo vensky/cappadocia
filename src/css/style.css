@@ -1,1 +1,157 @@
-html{-webkit-box-sizing:border-box;box-sizing:border-box}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  scroll-behavior: smooth; }
+
+h1[class],
+h2[class],
+h3[class],
+h4[class],
+h5[class],
+h6[class] {
+  margin: 0; }
+
+ul[class],
+ol[class] {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto; }
+
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+button,
+input {
+  overflow: visible; }
+
+textarea {
+  resize: none;
+  overflow: auto; }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+         -o-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+
+@font-face {
+  font-family: "Balqis";
+  src: url("../fonts/balqis.woff2") format("woff2"), url("../fonts/balqis.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("../fonts/robotoCondensed-Light.woff2") format("woff2"), url("../fonts/robotoCondensedLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("../fonts/robotoCondensed-LightItalic.woff2") format("woff2"), url("../fonts/robotoCondensedLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("../fonts/robotoCondensed-Regular.woff2") format("woff2"), url("../fonts/robotoCondensed-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+body {
+  background: #fff;
+  font: 300 18px/21px RobotoCondensed, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #000; }
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.header {
+  background: url(../img/header-bg.jpg) no-repeat 50% 100%;
+  background-size: cover;
+  height: 100vh; }
+  .header__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 24px;
+    font-weight: 400;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    line-height: 28px;
+    padding-top: 72px; }
+  .header__phone {
+    padding-left: 40px;
+    position: relative;
+    color: inherit;
+    text-decoration: none; }
+    .header__phone::before {
+      content: "";
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      background-image: url(../img/icon-phone.svg);
+      left: 0; }
+  .header__title {
+    text-align: center;
+    padding-top: 152px;
+    font: 300 250px/334px Balqis, cursive; }
+    .header__title span {
+      display: block;
+      text-align: right;
+      font: italic 56px/66px RobotoCondensed, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin-top: -66px; }
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu__list-item:not(:last-child) {
+  margin-right: 52px; }
+
+.menu__list-link {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 2px solid transparent; }
+  .menu__list-link:hover {
+    color: #e2ab3f;
+    border-bottom-color: currentColor;
+    -webkit-transition: color 0.5s ease, border-bottom-color 0.5s ease;
+    -o-transition: color 0.5s ease, border-bottom-color 0.5s ease;
+    transition: color 0.5s ease, border-bottom-color 0.5s ease; }
