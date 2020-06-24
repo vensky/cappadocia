@@ -30,16 +30,16 @@ Temporary Items
 .apdisk
 
 # Frontend ignore files
-# npm-debug.log
-# yarn-error.log
-# node_modules
-# .sass-cache
-# .cache-frontend
-# .tmp
-# *.map
-# bower_components
+npm-debug.log
+yarn-error.log
+node_modules
+.sass-cache
+.cache-frontend
+.tmp
+*.map
+bower_components
 
 # Project ignore files
-# build
-# src/css/style.min.js
-# src/js/scripts.min.js
+build
+src/css/style.min.js
+src/js/scripts.min.js
